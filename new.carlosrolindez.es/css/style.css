@@ -19,7 +19,6 @@ div.header {
 
 div.header-leftmargin {
 	width: calc(-305px + 50vw);
-	min-width: 150px;
 	display: inline-block;
 	height: 580px;
 }
@@ -76,7 +75,7 @@ div.credits a {
 
 
 div.linkbar {
-	min-width: 1050px; 
+	min-width: 900px; 
 	height: 78px;
 	background-color: white;  
 	top: 0px;  
@@ -86,7 +85,7 @@ div.linkbar {
 
 div.linkbar-fixed {
 	position : fixed;
-	min-width: 1050px; 
+	min-width: 900px; 
 	height: 78px;
 	background-color: white;  
 	top: 0px;  
@@ -100,18 +99,18 @@ div.linkbar h1, div.linkbar-fixed h1 {
     color: #69A9D3;
     font-weight: 200;
     font-size: 1cm;
-    margin: 0;
-    padding: 0 0 0 calc(-550px + 50vw);
+    margin: 0 15px 0 calc(-430px + 50vw);
 }
 
 div.linkbar p, div.linkbar-fixed p {
 	position: relative;
 	display: inline-block;
-	margin-left: 15px;
+	width: 100px;
+	margin-left: 25px;
+	line-height: 1.5;
 	color: #696969;
     font-weight: 100;
     font-size: 0.35cm;
-	top: -10px;
 }
 
 div.linkbar p:hover, div.linkbar-fixed p:hover {
@@ -134,7 +133,7 @@ div.linkbar a.linkbar-linkedin img:hover, div.linkbar-fixed a.linkbar-linkedin i
 }
 
 div.linkbar hr, div.linkbar-fixed hr {
-	width: 98vw;
+	width: calc(-17px + 100vw);
   	height: 10px;
   	border: 0;
   	box-shadow: 0 10px 10px -10px #8c8c8c inset;
@@ -143,15 +142,14 @@ div.linkbar hr, div.linkbar-fixed hr {
 }
 
 div.experience {
-	postion: relative;
+	position: relative;
 	padding-top: 200px;
-	height: 700px
+	height: 800px
 }
 
 div.gap1 {
 	position:relative;
-	width: calc(-350px + 43vw);
-	min-width: 41px;
+	width: calc(-420px + 50vw);
 	height:20px;
 	display: inline-block;
 }
@@ -168,8 +166,7 @@ div.experience h1 {
 
 div.gap2 {
 	position:relative;
-	width: calc(-350px + 43vw);
-	min-width: 41px;
+	width: calc(-420px + 50vw);
 	height:20px;
 	margin-top: 60px;
 	display: inline-block;
@@ -197,8 +194,7 @@ div.experience img {
 
 .gap3 {
 	position: relative;
-	width: calc(-350px + 43vw);
-	min-width: 41px;
+	width: calc(-420px + 50vw);
 	height:20px;
 	margin-top: 160px;
 	display: inline-block;
@@ -319,8 +315,8 @@ div.experience_explanation p {
 }
 
 div.academic {
-	postion: relative;
-	padding-top: 150px;
+	position: relative;
+	height: 600px
 }
 
 div.academic h1 {
@@ -335,6 +331,7 @@ div.academic h1 {
 
 div.academic_explanation {
 	width: 820px;
+	position: absolute;
 	display: inline-block;
 }
 
@@ -359,9 +356,8 @@ div.academic_explanation img.right {
 }
 
 div.contact {
-	display: inline-block;
-	postion: relative;
-	padding-top: 150px;
+	position: relative;
+	height: 200px;
 }
 
 div.contact h1 {
@@ -378,6 +374,7 @@ div.contact h1 {
 div.contact_explanation {
 	width: 820px;
 	display: inline-block;
+	position: absolute;
 }
 
 div.contact_explanation h2 {
@@ -403,10 +400,8 @@ div.contact_explanation a {
 }
 
 div.curriculum {
-	display: inline-block;
-	postion: relative;
-	margin-top: 75px;
-	height: 350px;
+	position: relative;
+	height: 300px;
 }
 
 div.curriculum h1 {
@@ -423,6 +418,7 @@ div.curriculum h1 {
 div.curriculum_explanation {
 	width: 820px;
 	display: inline-block;
+	position: absolute;
 }
 
 div.curriculum_explanation h2 {
@@ -466,8 +462,8 @@ div.footer {
 }
 
 div.footer-leftmargin {
-	width: calc(-400px + 50vw);
-	min-width: 150px;
+	width: calc(-420px + 50vw);
+/* 	min-width: 55px; */
 	display: inline-block;
 	height: 580px;
 }
