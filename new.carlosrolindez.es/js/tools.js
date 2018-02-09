@@ -1,20 +1,27 @@
 $(function () {
+	// var userLang = navigator.language;
+	// if (userLang=="es") {
+	// 	if (document.documentElement.lang!="es-ES") {
+	// 		window.location.href = "index_es.html"
+	// 	}
+	// }
+
 	$("#first_exp_div").click(function() {
-		
+
 		$("#first_exp_div").addClass("activated");
 		$("#first_exp_txt_div").addClass("activated");
 		$("#second_exp_div").removeClass("activated");
 		$("#second_exp_txt_div").removeClass("activated");
-	
+
 	});
-	
+
 	$("#second_exp_div").click(function() {
 		$("#first_exp_div").removeClass("activated");
 		$("#first_exp_txt_div").removeClass("activated");
 		$("#second_exp_div").addClass("activated");
 		$("#second_exp_txt_div").addClass("activated");
 	});
-	
+
 
 	$(document).on('click', 'a[href^="#"]', function (event) {
 	    event.preventDefault();
@@ -26,7 +33,7 @@ $(function () {
 
 	$("#first_exp_div").css("cursor","pointer");
 	$("#second_exp_div").css("cursor","pointer");
-	
+
 	$(window).scroll(function() {
 		var pos = $(window).scrollTop();
 		var barHeight = $("div.linkbar").height();
@@ -34,11 +41,11 @@ $(function () {
 			$("div.linkbar").css("opacity","0.0");
 		} else if (pos > (610-2*barHeight)) {
 			$("div.linkbar").css("opacity",((610-barHeight)-pos)/barHeight);
-		} else {		
+		} else {
 			$("div.linkbar").css("opacity","1.0");
 		}
 	});
-	
+
 });
 
 
