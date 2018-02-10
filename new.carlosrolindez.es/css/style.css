@@ -159,8 +159,31 @@ div.solapa:hover {
 	margin-left: calc(-200px - 17px + 100vw);
 	width: 200px;
 }
+
 div.solapa p {
 	text-align: center;
+}
+
+div.misjuegos {
+	position: absolute;
+	margin-top: 150px;
+	margin-left: calc(-180px - 17px + 100vw);
+	width: 180px;
+	height: 50px;
+	background-color: black;
+	border-radius: 20px 0 0 20px;
+	z-index: 1010;
+}
+
+div.misjuegos:hover {
+	margin-left: calc(-200px - 17px + 100vw);
+	width: 200px;
+}
+
+div.misjuegos img {
+	margin-left:20px;
+	widht: 150px;
+	height: 50px;
 }
 
 div.experience {

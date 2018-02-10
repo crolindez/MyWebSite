@@ -56,6 +56,14 @@ $(function () {
 	$("#spanish").on ('click', function (event) {
 		window.location.href = "index_es.html"
 	});
+
+	$("#juegos").on ('click', function (event) {
+ 		window.location.href = "apps_es.html"
+	});
+
+	$("#games").on ('click', function (event) {
+		window.location.href = "apps_en.html"
+	});
 });
 
 
