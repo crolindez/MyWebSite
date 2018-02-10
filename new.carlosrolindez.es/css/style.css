@@ -153,6 +153,8 @@ div.solapa {
 	font-weight: 800;
 	line-height: 1.5;
 	z-index: 1010;
+	-webkit-transition: width 0.5s, margin-left 0.5s; /* Safari */
+	transition: width 0.5s, margin-left 0.5s;
 }
 
 div.solapa:hover {
@@ -161,18 +163,21 @@ div.solapa:hover {
 }
 
 div.solapa p {
-	text-align: center;
+	text-align: left;
+	padding-left: 40px;
 }
 
 div.misjuegos {
 	position: absolute;
-	margin-top: 150px;
+	margin-top: 120px;
 	margin-left: calc(-180px - 17px + 100vw);
 	width: 180px;
 	height: 50px;
 	background-color: black;
 	border-radius: 20px 0 0 20px;
 	z-index: 1010;
+	-webkit-transition: width 0.5s, margin-left 0.5s; /* Safari */
+	transition: width 0.5s, margin-left 0.5s;
 }
 
 div.misjuegos:hover {

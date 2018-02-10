@@ -33,6 +33,7 @@ $(function () {
 
 
 	$(".solapa").css("cursor","pointer");
+	$(".misjuegos").css("cursor","pointer");
 
 	$("#first_exp_div").css("cursor","pointer");
 	$("#second_exp_div").css("cursor","pointer");
