@@ -31,6 +31,9 @@ $(function () {
 	    }, 1000);
 	});
 
+
+	$(".solapa").css("cursor","pointer");
+
 	$("#first_exp_div").css("cursor","pointer");
 	$("#second_exp_div").css("cursor","pointer");
 
@@ -46,6 +49,13 @@ $(function () {
 		}
 	});
 
+	$("#english").on ('click', function (event) {
+ 		window.location.href = "index.html"
+	});
+
+	$("#spanish").on ('click', function (event) {
+		window.location.href = "index_es.html"
+	});
 });
 
 

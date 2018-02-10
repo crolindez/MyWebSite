@@ -14,7 +14,7 @@ div.header {
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: auto auto;
-	z-index: 1002;	
+	z-index: 1002;
 }
 
 div.header-leftmargin {
@@ -48,7 +48,7 @@ div.header-container h2 {
 	font-weight: 100;
 	line-height: 1.5;
 	margin: 20px 0 20px 0;
-	
+
 }
 
 div.credits {
@@ -60,35 +60,35 @@ div.credits {
 
 div.credits h1 {
 	float: right;
-    color: white;
-    font-weight: 100;
-    font-size: 0.3cm;
-    display: inline-block;
-    margin: 12px 5px 0 0;
+	color: white;
+	font-weight: 100;
+	font-size: 0.3cm;
+	display: inline-block;
+	margin: 12px 5px 0 0;
 }
 
 div.credits a {
 	margin :5px;
-    display: inline-block;	
-    float: right;
+	display: inline-block;
+	float: right;
 }
 
 
 div.linkbar {
-	min-width: 900px; 
+	min-width: 900px;
 	height: 78px;
-	background-color: white;  
-	top: 0px;  
+	background-color: white;
+	top: 0px;
 	z-index: 1000;
 	opacity: 1;
 }
 
 div.linkbar-fixed {
 	position : fixed;
-	min-width: 900px; 
+	min-width: 900px;
 	height: 78px;
-	background-color: white;  
-	top: 0px;  
+	background-color: white;
+	top: 0px;
 	z-index: 1001;
 	opacity: 1;
 }
@@ -96,10 +96,10 @@ div.linkbar-fixed {
 div.linkbar h1, div.linkbar-fixed h1 {
 	position: relative;
 	display: inline-block;
-    color: #69A9D3;
-    font-weight: 200;
-    font-size: 1cm;
-    margin: 0 15px 0 calc(-430px + 50vw);
+	color: #69A9D3;
+	font-weight: 200;
+	font-size: 1cm;
+	margin: 0 15px 0 calc(-430px + 50vw);
 }
 
 div.linkbar p, div.linkbar-fixed p {
@@ -109,36 +109,58 @@ div.linkbar p, div.linkbar-fixed p {
 	margin-left: 25px;
 	line-height: 1.5;
 	color: #696969;
-    font-weight: 100;
-    font-size: 0.35cm;
+	font-weight: 100;
+	font-size: 0.35cm;
 }
 
 div.linkbar p:hover, div.linkbar-fixed p:hover {
-	color: #69A9D3;	
+	color: #69A9D3;
 }
 
 div.linkbar a.linkbar-linkedin, div.linkbar-fixed a.linkbar-linkedin {
 	position: relative;
 	display: inline-block;
-	margin-left: 15px;	
-	top: 5px; 
+	margin-left: 15px;
+	top: 5px;
 }
 
 div.linkbar a.linkbar-linkedin img, div.linkbar-fixed a.linkbar-linkedin img {
-	content:url('../images/linkedin%20logo.png'); 
-} 
+	content:url('../images/linkedin%20logo.png');
+}
 
 div.linkbar a.linkbar-linkedin img:hover, div.linkbar-fixed a.linkbar-linkedin img:hover {
-	content:url('../images/linkedin%20logo-r.png'); 	
+	content:url('../images/linkedin%20logo-r.png');
 }
 
 div.linkbar hr, div.linkbar-fixed hr {
 	width: calc(-17px + 100vw);
-  	height: 10px;
-  	border: 0;
-  	box-shadow: 0 10px 10px -10px #8c8c8c inset;
-  	margin: 0;
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8c8c inset;
+	margin: 0;
+}
 
+div.solapa {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: calc(-180px - 17px + 100vw);
+	width: 180px;
+	height: 50px;
+	background-color: lawngreen;
+	border-radius: 20px 0 0 20px;
+	color: gray;
+	font-size: 0.4cm;
+	font-weight: 800;
+	line-height: 1.5;
+	z-index: 1010;
+}
+
+div.solapa:hover {
+	margin-left: calc(-200px - 17px + 100vw);
+	width: 200px;
+}
+div.solapa p {
+	text-align: center;
 }
 
 div.experience {
@@ -157,11 +179,11 @@ div.gap1 {
 div.experience h1 {
 	position: absolute;
 	display: inline-block;
-	width: 700px;		
-	font-family: cabin;	
+	width: 700px;
+	font-family: cabin;
 	color: #69A9D3;
-    font-weight: 700;
-    font-size: 30px;
+	font-weight: 700;
+	font-size: 30px;
 }
 
 div.gap2 {
@@ -175,14 +197,14 @@ div.gap2 {
 div.experience h2{
 	position: absolute;
 	display: inline-block;
-	margin-top: 60px;	
-	width: 700px;	
-	font-family: cabin;	
+	margin-top: 60px;
+	width: 700px;
+	font-family: cabin;
 	color: #000000;
-    font-weight: 700;
-    font-size: 105%;
-    line-height: 1.5;
-  	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 105%;
+	line-height: 1.5;
+	letter-spacing: 1px;
 }
 
 div.experience img {
@@ -209,10 +231,10 @@ div.experience_selector {
 
 div.selector {
 	width: 245px;
-    height: 50px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgba(105, 169, 211, 1);
+	height: 50px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgba(105, 169, 211, 1);
 	border-radius: 10px;
 	margin-top: 25px;
 }
@@ -221,18 +243,18 @@ div.selector  p {
 	text-align: left;
 	margin-left: 10px;
 	margin-top: 5px;
-	color: rgba(105, 169, 211, 1);  
-    font-weight: 100;
-    font-size: 16px;	
-    line-height: 1.4;
+	color: rgba(105, 169, 211, 1);
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 1.4;
 }
 
 div.selector:hover {
 	width: 245px;
-    height: 50px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: transparent;
+	height: 50px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: transparent;
 	background-color: rgba(105, 169, 211, 1);
 	border-radius: 10px;
 	margin-top: 25px;
@@ -244,17 +266,17 @@ div.selector:hover p {
 	margin-left: 10px;
 	margin-top: 5px;
 	color: rgba(216, 236, 244, 1);
-    font-weight: 100;
-    font-size: 16px;	
-    line-height: 1.4;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 1.4;
 }
 
 div.selector.activated {
 	width: 245px;
-    height: 50px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: transparent;
+	height: 50px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: transparent;
 	background-color: rgba(105, 169, 211, 1);
 	border-radius: 10px;
 	margin-top: 25px;
@@ -264,54 +286,54 @@ div.selector.activated p {
 	text-align: left;
 	margin-left: 10px;
 	margin-top: 5px;
-	color: white;  
-    font-weight: 100;
-    font-size: 16px;	
-    line-height: 1.4;
+	color: white;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 1.4;
 }
 
 
 
 div.experience_explanation.activated {
 	position: absolute;
-	display: inline-block;	
+	display: inline-block;
 	margin-top: 130px;
-	margin-left: 270px;	
+	margin-left: 270px;
 	width: 550px;
-    border-width: 0 0 0 4px;
-    border-style: solid;
-    border-color: rgba(105, 169, 211, 1);
-  	visibility: visible;
-  	opacity: 1;	    
+	border-width: 0 0 0 4px;
+	border-style: solid;
+	border-color: rgba(105, 169, 211, 1);
+	visibility: visible;
+	opacity: 1;
 
 }
 
 
 div.experience_explanation {
 	position: absolute;
-	display: inline-block;	
-	margin-left: 270px;	
+	display: inline-block;
+	margin-left: 270px;
 	width: 550px;
-    border-width: 0 0 0 4px;
-    border-style: solid;
-    border-color: rgba(105, 169, 211, 1);
- 	visibility: hidden;    
-  	opacity: 0;
-  	transition: visibility 0.1s, opacity 0.5s linear;
-	margin-top: 130px;    
+	border-width: 0 0 0 4px;
+	border-style: solid;
+	border-color: rgba(105, 169, 211, 1);
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.1s, opacity 0.5s linear;
+	margin-top: 130px;
 }
 
 
 
 div.experience_explanation p {
 	text-align: justify;
-	font-family: cabin;	
+	font-family: cabin;
 	color: black;
-    font-weight: 100;
-    font-size: 15px;	
-    line-height: 1.5;
-    padding: 0 0 0 9px;
-    margin: 0 0 20px 0;
+	font-weight: 100;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0 0 0 9px;
+	margin: 0 0 20px 0;
 }
 
 div.academic {
@@ -322,11 +344,11 @@ div.academic {
 div.academic h1 {
 	position: absolute;
 	display: inline-block;
-	width: 700px;		
-	font-family: cabin;	
+	width: 700px;
+	font-family: cabin;
 	color: #69A9D3;
-    font-weight: 700;
-    font-size: 30px;
+	font-weight: 700;
+	font-size: 30px;
 }
 
 div.academic_explanation {
@@ -337,22 +359,22 @@ div.academic_explanation {
 
 div.academic_explanation h2 {
 	text-align: justify;
-	font-family: cabin;	
+	font-family: cabin;
 	color: #000000;
-    font-weight: 700;
-    font-size: 105%;
-    line-height: 1.5;
-  	letter-spacing: 1px;   	
+	font-weight: 700;
+	font-size: 105%;
+	line-height: 1.5;
+	letter-spacing: 1px;
 }
 
 div.academic_explanation img.left {
 	float: left;
-	margin-right: 20px;   	
+	margin-right: 20px;
 }
 
 div.academic_explanation img.right {
 	float: right;
-	margin-left: 30px;   	
+	margin-left: 30px;
 }
 
 div.contact {
@@ -363,11 +385,11 @@ div.contact {
 div.contact h1 {
 	position: absolute;
 	display: inline-block;
-	width: 700px;		
-	font-family: cabin;	
+	width: 700px;
+	font-family: cabin;
 	color: #69A9D3;
-    font-weight: 700;
-    font-size: 30px;
+	font-weight: 700;
+	font-size: 30px;
 
 }
 
@@ -379,24 +401,24 @@ div.contact_explanation {
 
 div.contact_explanation h2 {
 	text-align: justify;
-	font-family: cabin;	
+	font-family: cabin;
 	color: #000000;
-    font-weight: 700;
-    font-size: 105%;
-    line-height: 1.0;
-  	letter-spacing: 1px;   
-  	padding-bottom: 0;
+	font-weight: 700;
+	font-size: 105%;
+	line-height: 1.0;
+	letter-spacing: 1px;
+	padding-bottom: 0;
 }
 
 div.contact_explanation a {
 	text-align: justify;
-	font-family: cabin;	
+	font-family: cabin;
 	color: #69A9D3;
-    font-weight: 700;
-    font-size: 105%;
-    line-height: 1.0;
-  	letter-spacing: 1px;   	
-  	padding-top: 0;	
+	font-weight: 700;
+	font-size: 105%;
+	line-height: 1.0;
+	letter-spacing: 1px;
+	padding-top: 0;
 }
 
 div.curriculum {
@@ -407,11 +429,11 @@ div.curriculum {
 div.curriculum h1 {
 	position: absolute;
 	display: inline-block;
-	width: 700px;		
-	font-family: cabin;	
+	width: 700px;
+	font-family: cabin;
 	color: #69A9D3;
-    font-weight: 700;
-    font-size: 30px;
+	font-weight: 700;
+	font-size: 30px;
 
 }
 
@@ -423,28 +445,28 @@ div.curriculum_explanation {
 
 div.curriculum_explanation h2 {
 	text-align: justify;
-	font-family: cabin;	
+	font-family: cabin;
 	color: #000000;
-    font-weight: 700;
-    font-size: 105%;
-    line-height: 1.0;
-  	letter-spacing: 1px;   
-  	padding-bottom: 0;
+	font-weight: 700;
+	font-size: 105%;
+	line-height: 1.0;
+	letter-spacing: 1px;
+	padding-bottom: 0;
 }
 
 div.curriculum_explanation a {
 	text-align: justify;
-	font-family: cabin;	
+	font-family: cabin;
 	color: #69A9D3;
-    font-weight: 700;
-    font-size: 105%;
-    line-height: 1.0;
-  	letter-spacing: 1px;   	
-  	padding-top: 0;	
+	font-weight: 700;
+	font-size: 105%;
+	line-height: 1.0;
+	letter-spacing: 1px;
+	padding-top: 0;
 }
 
 div.curriculum_explanation img {
-	float: right;	
+	float: right;
 	margin-right: 200px;
 	margin-top: -50px;
 }
@@ -463,7 +485,7 @@ div.footer {
 
 div.footer-leftmargin {
 	width: calc(-420px + 50vw);
-/* 	min-width: 55px; */
+	/* 	min-width: 55px; */
 	display: inline-block;
 	height: 580px;
 }
@@ -479,7 +501,7 @@ div.footer h1 {
 	width: 100%;
 	text-align: center;
 	color: white;
-    font-family: Comfortaa;
+	font-family: Comfortaa;
 	font-size: 3cm;
 	line-height: 1;
 	font-weight: 100;
@@ -487,25 +509,25 @@ div.footer h1 {
 }
 
 /* .container {
-  position: absolute 0 0;
-  width: 100vw;
-  align: center;
-}	
+position: absolute 0 0;
+width: 100vw;
+align: center;
+}
 .eye {
-  position: fixed;
-  display: inline-block;
-  border-radius: 50%;
-  height: 90px;
-  width: 90px;
-  background: #CCC;
+position: fixed;
+display: inline-block;
+border-radius: 50%;
+height: 90px;
+width: 90px;
+background: #CCC;
 }
 .eye:after { pupil
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background: #000;
-  border-radius: 50%;
-  content: " ";
+position: absolute;
+bottom: 30px;
+right: 20px;
+width: 50px;
+height: 50px;
+background: #000;
+border-radius: 50%;
+content: " ";
 } */
