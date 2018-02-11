@@ -33,6 +33,7 @@ $(function () {
 
 
 	$(".solapa").css("cursor","pointer");
+	$(".solapa2").css("cursor","pointer");
 	$(".misjuegos").css("cursor","pointer");
 
 	$("#first_exp_div").css("cursor","pointer");
@@ -63,8 +64,9 @@ $(function () {
 	});
 
 	$("#games").on ('click', function (event) {
-		window.location.href = "apps_en.html"
+		window.location.href = "apps.html"
 	});
+
 });
 
 

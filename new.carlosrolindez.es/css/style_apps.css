@@ -1,0 +1,102 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Comfortaa;
+	color: orange;
+	background-color: black;
+}
+
+div.solapa, div.solapa2 {
+	position: absolute;
+	top : 50px;
+	left: calc(-180px - 17px + 100vw);
+	width: 180px;
+	height: 50px;
+	background-color: lawngreen;
+	border-radius: 20px 0 0 20px;
+	color: gray;
+	font-size: 0.4cm;
+	font-weight: 800;
+	line-height: 1.5;
+	z-index: 1010;
+	-webkit-transition: width 0.5s, left 0.5s; /* Safari */
+	transition: width 0.5s, left 0.5s;
+}
+
+div.solapa2 {
+	top: 120px;
+}
+
+div.solapa:hover, div.solapa2:hover {
+	left: calc(-200px - 17px + 100vw);
+	width: 200px;
+}
+
+div.solapa p, div.solapa2 p {
+	text-align: left;
+	padding-left: 40px;
+}
+
+
+
+div.header {
+	position: relative;
+	width: calc(-17px + 100vw);
+	height: 450px;
+	z-index: 1002;
+}
+
+div.header img {
+	display: block;
+	margin: 20px auto;
+}
+
+div.header p {
+	font-weight:800;
+	text-align: center;
+}
+div.header p a  {
+	font-weight:800;
+	color:#0000FF;
+}
+div.header p a:visited {
+	color:#800080;
+}
+div.header p a:hover {
+	color:#008000;
+}
+div.header p a:active {
+	color:#FF0000;
+}
+
+hr {
+	width: calc(-17px + 100vw);
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px white inset;
+	margin: 0;
+}
+
+/* .container {
+position: absolute 0 0;
+width: 100vw;
+align: center;
+}
+.eye {
+position: fixed;
+display: inline-block;
+border-radius: 50%;
+height: 90px;
+width: 90px;
+background: #CCC;
+}
+.eye:after { pupil
+position: absolute;
+bottom: 30px;
+right: 20px;
+width: 50px;
+height: 50px;
+background: #000;
+border-radius: 50%;
+content: " ";
+} */
