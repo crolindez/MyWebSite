@@ -35,6 +35,10 @@ $(function () {
 	$(".solapa").css("cursor","pointer");
 	$(".solapa2").css("cursor","pointer");
 	$(".misjuegos").css("cursor","pointer");
+	$(".ping_android").css("cursor","pointer");
+	$(".memoryzar_android").css("cursor","pointer");
+	$(".ping_androide").css("cursor","pointer");
+	$(".memoryzar_androide").css("cursor","pointer");
 
 	$("#first_exp_div").css("cursor","pointer");
 	$("#second_exp_div").css("cursor","pointer");
@@ -67,6 +71,21 @@ $(function () {
 		window.location.href = "apps.html"
 	});
 
+	$(".ping_android").on ('click', function (event) {
+		window.location.href = "https://play.google.com/store/apps/details?id=es.carlosrolindez.ping&hl=en"
+	});
+
+	$(".memoryzar_android").on ('click', function (event) {
+		window.location.href = "https://play.google.com/store/apps/details?id=es.carlosrolindez.memoryzar&hl=en"
+	});
+
+	$(".ping_androide").on ('click', function (event) {
+		window.location.href = "https://play.google.com/store/apps/details?id=es.carlosrolindez.ping&hl=es"
+	});
+
+	$(".memoryzar_androide").on ('click', function (event) {
+		window.location.href = "https://play.google.com/store/apps/details?id=es.carlosrolindez.memoryzar&hl=es"
+	});
 });
 
 

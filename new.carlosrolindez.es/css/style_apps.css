@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: Comfortaa;
-	color: orange;
+	color: white;
 	background-color: black;
 }
 
@@ -54,18 +54,19 @@ div.header img {
 div.header p {
 	font-weight:800;
 	text-align: center;
+	color: orange;
 }
-div.header p a  {
+a  {
 	font-weight:800;
 	color:#0000FF;
 }
-div.header p a:visited {
+a:visited {
 	color:#800080;
 }
-div.header p a:hover {
+a:hover {
 	color:#008000;
 }
-div.header p a:active {
+a:active {
 	color:#FF0000;
 }
 
@@ -76,6 +77,101 @@ hr {
 	box-shadow: 0 10px 10px -10px white inset;
 	margin: 0;
 }
+
+div.games {
+	padding-top: 75px;
+}
+
+div.gap1 {
+	position:relative;
+	width: calc(-350px + 50vw);
+	height:20px;
+	display: inline-block;
+}
+
+div.ping {
+	position: relative;
+	display: inline-block;
+	width: 700px;
+}
+
+div.ping h1 {
+	position: relative;
+	font-family: cabin;
+	font-size: 30px;
+	margin-bottom: 60px;
+	width: 0;
+}
+
+div.ping h1:hover {
+	color: orange;
+}
+
+div.ping h2{
+	position: relative;
+	width: 450px;
+	font-family: cabin;
+	font-weight: 700;
+	font-size: 105%;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+div.ping img {
+	position: absolute;
+	top: 0;
+	left: 500px;
+	width: 150px;
+}
+
+div.ping img:hover {
+	left: 490px;
+	width: 160px;
+}
+
+div.memoryzar {
+	position: relative;
+	display: inline-block;
+	width: 700px;
+	top: 100px;
+	margin-bottom: 100px;
+}
+
+div.memoryzar h1 {
+	position: relative;
+	font-family: cabin;
+	font-size: 30px;
+	margin-bottom: 60px;
+	width: 0;
+}
+
+div.memoryzar h1:hover {
+	color: orange;
+}
+
+div.memoryzar h2{
+	position: relative;
+	width: 450px;
+	font-family: cabin;
+	font-weight: 700;
+	font-size: 105%;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+div.memoryzar img {
+	position: absolute;
+	top: 0;
+	left: 500px;
+	width: 150px;
+}
+
+div.memoryzar img:hover {
+	left: 490px;
+	width: 160px;
+}
+
+
 
 /* .container {
 position: absolute 0 0;
