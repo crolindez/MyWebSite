@@ -142,10 +142,10 @@ div.linkbar hr, div.linkbar-fixed hr {
 
 div.solapa {
 	position: absolute;
-	margin-top: 50px;
-	margin-left: calc(-180px - 17px + 100vw);
-	width: 180px;
-	height: 50px;
+	margin-top: 20px;
+	margin-left: calc(-140px - 17px + 100vw);
+	width: 140px;
+	height: 45px;
 	background-color: lawngreen;
 	border-radius: 20px 0 0 20px;
 	color: gray;
@@ -158,21 +158,21 @@ div.solapa {
 }
 
 div.solapa:hover {
-	margin-left: calc(-200px - 17px + 100vw);
-	width: 200px;
+	margin-left: calc(-160px - 17px + 100vw);
+	width: 160px;
 }
 
 div.solapa p {
 	text-align: left;
-	padding-left: 40px;
+	padding-left: 30px;
 }
 
 div.misjuegos {
 	position: absolute;
-	margin-top: 120px;
-	margin-left: calc(-180px - 17px + 100vw);
-	width: 180px;
-	height: 50px;
+	margin-top: 240px;
+	margin-left: calc(-140px - 17px + 100vw);
+	width: 140px;
+	height: 45px;
 	background-color: black;
 	border-radius: 20px 0 0 20px;
 	z-index: 1010;
@@ -181,14 +181,14 @@ div.misjuegos {
 }
 
 div.misjuegos:hover {
-	margin-left: calc(-200px - 17px + 100vw);
-	width: 200px;
+	margin-left: calc(-160px - 17px + 100vw);
+	width: 160px;
 }
 
 div.misjuegos img {
-	margin-left:20px;
-	widht: 150px;
-	height: 50px;
+	margin-top: 2px;
+	margin-left:15px;
+	height: 40px;
 }
 
 div.experience {

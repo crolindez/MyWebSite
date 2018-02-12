@@ -8,10 +8,10 @@ body{
 
 div.solapa, div.solapa2 {
 	position: absolute;
-	top : 50px;
-	left: calc(-180px - 17px + 100vw);
-	width: 180px;
-	height: 50px;
+	top : 20px;
+	left: calc(-140px - 17px + 100vw);
+	width: 140px;
+	height: 45px;
 	background-color: lawngreen;
 	border-radius: 20px 0 0 20px;
 	color: gray;
@@ -24,17 +24,17 @@ div.solapa, div.solapa2 {
 }
 
 div.solapa2 {
-	top: 120px;
+	top:240px;
 }
 
 div.solapa:hover, div.solapa2:hover {
-	left: calc(-200px - 17px + 100vw);
-	width: 200px;
+	left: calc(-160px - 17px + 100vw);
+	width: 160px;
 }
 
 div.solapa p, div.solapa2 p {
 	text-align: left;
-	padding-left: 40px;
+	padding-left: 30px;
 }
 
 
