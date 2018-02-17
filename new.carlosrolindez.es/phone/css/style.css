@@ -93,20 +93,20 @@ div.header-container h3 {
 	text-align: right;
 }
 
-div.experience {
+div.experience, div.academic, div.contact {
 	display: none;
-	width: calc(-30px + 100vw);
-	padding: 15px;
+	width: calc(-50px + 100vw);
+	padding: 25px;
 }
 
-div.experience h1 {
+div.experience h1, div.academic h1, div.contact h1  {
 	font-family: cabin;
 	color: #69A9D3;
 	font-weight: 700;
 	font-size: 20px;
 }
 
-div.experience h2{
+div.experience h2, div.academic h2, div.contact h2 {
 	font-family: cabin;
 	text-align: justify;
 	color: #000000;
@@ -114,7 +114,7 @@ div.experience h2{
 	font-size: 12px;
 	line-height: 1.8;
 	letter-spacing: 1px;
-	width: calc(-30px + 100vw);
+	width: calc(-50px + 100vw);
 }
 
 div.experience img {
@@ -125,7 +125,7 @@ div.experience img {
 
 div.selector {
 	display: inline-block;
-	width: 139px;
+	width: 129px;
 	height: 50px;
 	border-width: 3px 3px 0 3px;
 	border-style: solid;
@@ -176,4 +176,49 @@ div.experience_explanation  p {
 	font-size: 9px;
 	font-family: Comfortaa;
 	line-height: 2;
+}
+
+div.academic img.left {
+	width: 60px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+div.academic img.right {
+	width: 60px;
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+div.contact a {
+	color: #69A9D3;
+}
+
+div.contact img{
+	width: 60px;
+	float: center;
+}
+
+div.footer-container {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	background-image: url('../../images/fondoppal_iv.jpg');
+	background-attachment: fixed;
+	background-size: auto ;
+}
+
+div.footer-container h1{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 20px 0;
+	font-family: Comfortaa;
+}
+
+div.contact.footer-container {
+	display: none;
+	width: 100vw;
+	padding: 0;
 }

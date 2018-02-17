@@ -60,12 +60,13 @@ $(function () {
 	$("#acad").on ('click', function (event) {
 		change();
 		$("#acad p").css({"color": "lightblue"});
-
+		$("div.academic").css({"display":"block"});
 	});
 
 	$("#cont").on ('click', function (event) {
 		change();
 		$("#cont p").css({"color": "lightblue"});
+		$("div.contact").css({"display":"block"});		
 	});
 
 
