@@ -9,7 +9,7 @@ div.back {
   position: fixed;
   margin: 0;
   padding: 0;
-	width: 100vw;
+	width: 320px;
 	height: 100vh;
 	background-color: white;
 	z-index: -1;
@@ -19,8 +19,8 @@ div.back {
 }
 
 div.header {
-  width: 100vw;
-  height: 17vw;
+  width: 320px;
+  height: 55px;
   background-color: white;
   padding: 0;
 }
@@ -56,12 +56,12 @@ div.carlos p, div.headblock p {
 	line-height: 0.7;
 	color: #008bf9;
 	font-weight: 400;
-	font-size: 8px;
+	font-size: 8.5px;
 }
 
 div.header-container {
 	display: block;
-	width: 100vw;
+	width: 320px;
 	padding-top: 0;
 }
 
@@ -74,7 +74,7 @@ div.header-container h1 {
 	font-family: Comfortaa;
 }
 
-div.header-container h2, div.header-container h3 {
+div.header-container h2, div.header-container h3, div.header-container h4 {
 	text-align: center;
 	color: white;
 	font-size: 12px;
@@ -93,9 +93,41 @@ div.header-container h3 {
 	text-align: right;
 }
 
+div.header-container h4 {
+	color: #008bf9;
+	font-size: 14px;
+	padding: 8px 0 0 0;
+	margin: 0 5px 0 0;
+}
+
+div#english, div#spanish {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 80px;
+	height: 40px;
+	background-color: white;
+	border-radius: 0 10px 0 0;
+}
+
+div#games, div#juegos  {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 80px;
+	height: 40px;
+	background-color: black;
+	border-radius: 10px 0 0 0;
+}
+
+div#games img, div#juegos img {
+	margin: 8px 0 0 5px;
+	width: 70px;
+}
+
 div.experience, div.academic, div.contact {
 	display: none;
-	width: calc(-50px + 100vw);
+	width: 270px;
 	padding: 25px;
 }
 
@@ -114,7 +146,7 @@ div.experience h2, div.academic h2, div.contact h2 {
 	font-size: 12px;
 	line-height: 1.8;
 	letter-spacing: 1px;
-	width: calc(-50px + 100vw);
+	width: 270px;
 }
 
 div.experience img {
@@ -229,7 +261,7 @@ div.linkedin h3{
 div.footer-container {
 	margin: 0;
 	padding: 0;
-	width: 100vw;
+	width: 320px;
 	background-image: url('../../images/fondoppal_iv.jpg');
 	background-attachment: fixed;
 	background-size: auto ;
@@ -246,6 +278,6 @@ div.footer-container h1{
 
 div.contact.footer-container {
 	display: none;
-	width: 100vw;
+	width: 320px;
 	padding: 0;
 }

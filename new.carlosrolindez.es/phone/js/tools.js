@@ -28,6 +28,10 @@ $(function () {
 	$(".headblock").css("cursor","pointer");
 	$(".selector").css("cursor","pointer");
 	$(".linkedin").css("cursor","pointer");
+	$("#english").css("cursor","pointer");
+	$("#games").css("cursor","pointer");
+	$("#spanish").css("cursor","pointer");
+	$("#juegos").css("cursor","pointer");
 
 	var change = function () {
 		$(".header").css("background-color", "#69A9D3");
@@ -76,7 +80,7 @@ $(function () {
 
 
 	$("#english").on ('click', function (event) {
- 		window.location.href = "index.html";
+ 		window.location.href = "index_en.html";
 	});
 
 	$("#spanish").on ('click', function (event) {

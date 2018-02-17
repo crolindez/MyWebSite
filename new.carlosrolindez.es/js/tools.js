@@ -1,10 +1,4 @@
 $(function () {
-	// var userLang = navigator.language;
-	// if (userLang=="es") {
-	// 	if (document.documentElement.lang!="es-ES") {
-	// 		window.location.href = "index_es.html"
-	// 	}
-	// }
 
 	$("#first_exp_div").click(function() {
 
@@ -56,7 +50,7 @@ $(function () {
 	});
 
 	$("#english").on ('click', function (event) {
- 		window.location.href = "index.html"
+ 		window.location.href = "index_en.html"
 	});
 
 	$("#spanish").on ('click', function (event) {
