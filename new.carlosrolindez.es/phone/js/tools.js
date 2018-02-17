@@ -23,47 +23,49 @@ $(function () {
 	});
 
 
-	$(document).on('click', 'a[href^="#"]', function (event) {
-	    event.preventDefault();
-
-	    $('html, body').animate({
-	        scrollTop: $($.attr(this, 'href')).offset().top
-	    }, 1000);
-	});
-
 
 	$(".carlos").css("cursor","pointer");
 	$(".headblock").css("cursor","pointer");
+	$(".selector").css("cursor","pointer");
 
-	$("#init").on ('click', function (event) {
+	var change = function () {
+		$(".header").css("background-color", "#69A9D3");
+		$("div.carlos p").css("color","white");
+		$("div.headblock").css({"border-color": "white"});
+		$("div.headblock p").css({"color": "white", 	"font-weight": "400"});
+		$("div.back").css({"background-image":"none"});
+		$("div.block").css({"display":"none"});
+	}
+
+	var unchange = function () {
 		$(".header").css("background-color", "white");
 		$("div.carlos p").css("color","#008bf9");
-		$("div.headblock").css({"border-color": "#008bf9"});		
+		$("div.headblock").css({"border-color": "#008bf9"});
 		$("div.headblock p").css({"color": "#008bf9", 	"font-weight": "400"});
+		$("div.back").css({"background-image":"url(../images/fondoppal_iv.jpg)"});
+		$("div.block").css({"display":"none"});
+	}
+
+	$("#init").on ('click', function (event) {
+		unchange();
+		$("div.header-container").css({"display":"block"});
 	});
 
 	$("#prof").on ('click', function (event) {
- 		$(".header").css("background-color", "#69A9D3");
-		$("div.carlos p").css("color","white");
-		$("div.headblock").css({"border-color": "white"});
-		$("div.headblock p").css({"color": "white", 	"font-weight": "400"});
-		$("#prof p").css({"font-weight": "200"});
+ 		change();
+		$("#prof p").css({"color": "lightblue"});
+		$("div.experience").css({"display":"block"});
 	});
 
 	$("#acad").on ('click', function (event) {
-		$(".header").css("background-color", "#69A9D3");
-		$("div.carlos p").css("color","white");
-		$("div.headblock").css({"border-color": "white"});
-		$("div.headblock p").css({"color": "white", 	"font-weight": "400"});
-		$("#acad p").css({"font-weight": "200"});
+		change();
+		$("#acad p").css({"color": "lightblue"});
+
 	});
 
 	$("#cont").on ('click', function (event) {
-		$(".header").css("background-color", "#69A9D3");
-		$("div.carlos p").css("color","white");
-		$("div.headblock").css({"border-color": "white"});
-		$("div.headblock p").css({"color": "white", 	"font-weight": "400"});
-		$("#cont p").css({"font-weight": "200"});
+		change();
+		$("#cont p").css({"color": "lightblue"});
 	});
 
 
