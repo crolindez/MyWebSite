@@ -47,14 +47,14 @@ div.headblock {
   padding: 0;
   top: 10px;
   border: solid;
-  border-color: #008bf9;
+  border-color: #0472ca;
   border-width: 0px 0px 0px 1px;
 }
 
 div.carlos p, div.headblock p {
   text-align: center;
 	line-height: 0.7;
-	color: #008bf9;
+	color: #0472ca;
 	font-weight: 400;
 	font-size: 8.5px;
 }
@@ -77,9 +77,9 @@ div.header-container h1 {
 div.header-container h2, div.header-container h3, div.header-container h4 {
 	text-align: center;
 	color: white;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 800;
-	line-height: 1.8;
+	line-height: 1.5;
 	margin: 0 20px;
 }
 
@@ -94,7 +94,7 @@ div.header-container h3 {
 }
 
 div.header-container h4 {
-	color: #008bf9;
+	color: #0472ca;
 	font-size: 14px;
 	padding: 8px 0 0 0;
 	margin: 0 5px 0 0;
@@ -142,10 +142,10 @@ div.experience h2, div.academic h2, div.contact h2 {
 	font-family: cabin;
 	text-align: justify;
 	color: #000000;
-	font-weight: 700;
-	font-size: 12px;
-	line-height: 1.8;
-	letter-spacing: 1px;
+	font-weight: 1000;
+	font-size: 13px;
+	line-height: 1.5;
+	letter-spacing: 0.8px;
 	width: 270px;
 }
 
@@ -177,7 +177,7 @@ div.selector:active {
 div.selector  p {
 	text-align: center;
 	color: white;
-	font-weight: 100;
+	font-weight: 800;
 	font-size: 9px;
 	font-family: Comfortaa;
 	line-height: 1;
@@ -204,8 +204,8 @@ div.experience_explanation.activated {
 div.experience_explanation  p {
 	text-align: justify;
 	color: black;
-	font-weight: 100;
-	font-size: 9px;
+	font-weight: 800;
+	font-size: 10px;
 	font-family: Comfortaa;
 	line-height: 2;
 }
