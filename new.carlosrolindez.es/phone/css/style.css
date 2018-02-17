@@ -199,6 +199,33 @@ div.contact img{
 	float: center;
 }
 
+div.linkedin {
+	position: relative;
+	left: 78px;
+	width: 80px;
+	height: 40px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: rgba(105, 169, 211, 1);
+	padding: 0 15px;
+	margin: 30px 0;
+}
+
+div.linkedin:active {
+	background-color:lightblue;
+}
+
+div.linkedin h3{
+	margin: 0;
+	text-align: center;
+	font-weight: 50;
+	font-size: 15px;
+	color: #69A9D3;
+
+}
+
+
 div.footer-container {
 	margin: 0;
 	padding: 0;

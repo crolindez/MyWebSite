@@ -27,6 +27,7 @@ $(function () {
 	$(".carlos").css("cursor","pointer");
 	$(".headblock").css("cursor","pointer");
 	$(".selector").css("cursor","pointer");
+	$(".linkedin").css("cursor","pointer");
 
 	var change = function () {
 		$(".header").css("background-color", "#69A9D3");
@@ -66,28 +67,32 @@ $(function () {
 	$("#cont").on ('click', function (event) {
 		change();
 		$("#cont p").css({"color": "lightblue"});
-		$("div.contact").css({"display":"block"});		
+		$("div.contact").css({"display":"block"});
+	});
+
+	$(".linkedin").on ('click', function (event) {
+ 		window.location.href = "https://www.linkedin.com/pub/carlos-rolindez/29/803/7ab";
 	});
 
 
 	$("#english").on ('click', function (event) {
- 		window.location.href = "index.html"
+ 		window.location.href = "index.html";
 	});
 
 	$("#spanish").on ('click', function (event) {
-		window.location.href = "index_es.html"
+		window.location.href = "index_es.html";
 	});
 
 	$("#juegos").on ('click', function (event) {
- 		window.location.href = "apps_es.html"
+ 		window.location.href = "apps_es.html";
 	});
 
 	$("#games").on ('click', function (event) {
-		window.location.href = "apps.html"
+		window.location.href = "apps.html";
 	});
 
 	$(".ping_android").on ('click', function (event) {
-		window.location.href = "https://play.google.com/store/apps/details?id=es.carlosrolindez.ping&hl=en"
+		window.location.href = "https://play.google.com/store/apps/details?id=es.carlosrolindez.ping&hl=en";
 	});
 
 	$(".memoryzar_android").on ('click', function (event) {
