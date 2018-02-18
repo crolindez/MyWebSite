@@ -135,6 +135,7 @@ div.selector.activated p {
 div.game_explanation {
 	display: none;
 	border-width: 0 3px 3px 3px;
+	border-radius: 0 0 10px 10px;
 	border-color: orange;
 	border-style: solid;
 	padding: 10px;
