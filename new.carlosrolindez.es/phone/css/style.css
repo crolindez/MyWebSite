@@ -100,7 +100,7 @@ div.header-container h4 {
 	margin: 0 5px 0 0;
 }
 
-div#english, div#spanish {
+div.infizq {
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -110,7 +110,7 @@ div#english, div#spanish {
 	border-radius: 0 10px 0 0;
 }
 
-div#games, div#juegos  {
+div.infder  {
 	position: fixed;
 	left: 240px;
 	bottom: 0;
@@ -118,6 +118,22 @@ div#games, div#juegos  {
 	height: 40px;
 	background-color: black;
 	border-radius: 10px 0 0 0;
+}
+
+div.infder:hover, div.infder:active {
+	position: fixed;
+	left: 235px;
+	bottom: 0;
+	width: 85px;
+	height: 45px;
+}
+
+div.infizq:hover, div.infizq:active {
+	position: fixed;
+	left: 0px;
+	bottom: 0;
+	width: 85px;
+	height: 45px;
 }
 
 div#games img, div#juegos img {

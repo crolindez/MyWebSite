@@ -1,0 +1,187 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Comfortaa;
+	color: white;
+	background-color: black;
+}
+
+div.supizq {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 80px;
+	height: 40px;
+	background-color: black;
+	border-radius: 0 0 10px 0;
+	border-width: 0 3px 3px 0;
+	border-style: solid;
+	color: orange;
+}
+
+div.supizq:hover, div.supizq:active {
+	position: fixed;
+	left: 0px;
+	top: 0;
+	width: 85px;
+	height: 45px;
+}
+
+div.supizq img{
+	margin: 8px 5px 0 0 ;
+	width: 70px;
+}
+
+div.supizq:hover img, div.supizq:active img {
+	margin: 8px 5px 0 0 ;
+	width: 75px;
+}
+
+div.supder  {
+	position: fixed;
+	left: 240px;
+	top: 0;
+	width: 80px;
+	height: 40px;
+	background-color: lawngreen;
+	border-radius: 0 0 0 10px ;
+	border-width: 0 0 3px 3px;
+	border-style: solid;
+	color: orange;
+}
+
+div.supder:hover, div.supder:active {
+	left: 235px;
+	width: 85px;
+	height: 45px;
+	padding-top: 3px;
+}
+
+div.supder p {
+	text-align: left;
+	padding-left: 10px;
+	color: gray;
+	font-size: 12px;
+	font-weight: 800;
+}
+
+div.supder:hover p, div.supder:active p {
+	font-size: 13px;
+}
+
+div.header {
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 280px;
+}
+
+div.header img {
+	width: 200px;
+	margin: 0 40px;
+}
+
+div.header p {
+	font-weight:800;
+	text-align: center;
+	color: orange;
+	font-size: 10px;
+}
+
+a  {
+	font-weight:800;
+	color:#0000FF;
+}
+a:visited {
+	color:#800080;
+}
+a:hover {
+	color:#008000;
+}
+a:active {
+	color:#FF0000;
+}
+
+div.selector {
+	display: inline-block;
+	width: 134px;
+	height: 47px;
+	border-width: 3px 3px 3px 3px;
+	border-style: solid;
+	border-radius: 10px 10px 0 0;
+	border-color: orange;
+	background-color: white;
+}
+
+div.selector.activated {
+	background-color: black;
+	border-width: 3px 3px 0 3px;
+	height: 50px;
+}
+
+div.selector:active {
+	background: gray;
+}
+
+div.selector  p {
+	text-align: center;
+	color: orange;
+	font-weight: 800;
+	font-size: 13px;
+	font-family: cabin;
+	line-height: 1;
+}
+
+div.selector.activated p {
+	color: orange;
+}
+
+div.game_explanation {
+	display: none;
+	border-width: 0 3px 3px 3px;
+	border-color: orange;
+	border-style: solid;
+	padding: 10px;
+
+}
+
+div.game_explanation.activated {
+	display: block;
+}
+
+div.game_explanation img{
+	margin: 10px 83px;
+	width: 80px;
+}
+
+div.game_explanation img:hover {
+	margin: 7px 80px;
+	width: 86px;
+}
+
+
+
+
+/* .container {
+position: absolute 0 0;
+width: 100vw;
+align: center;
+}
+.eye {
+position: fixed;
+display: inline-block;
+border-radius: 50%;
+height: 90px;
+width: 90px;
+background: #CCC;
+}
+.eye:after { pupil
+position: absolute;
+bottom: 30px;
+right: 20px;
+width: 50px;
+height: 50px;
+background: #000;
+border-radius: 50%;
+content: " ";
+} */

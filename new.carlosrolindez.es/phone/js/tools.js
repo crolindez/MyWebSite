@@ -32,6 +32,7 @@ $(function () {
 	$("#games").css("cursor","pointer");
 	$("#spanish").css("cursor","pointer");
 	$("#juegos").css("cursor","pointer");
+	$(".game_img").css("cursor","pointer");
 
 	var change = function () {
 		$(".header").css("background-color", "#69A9D3");
@@ -92,7 +93,7 @@ $(function () {
 	});
 
 	$("#games").on ('click', function (event) {
-		window.location.href = "apps.html";
+		window.location.href = "apps_en.html";
 	});
 
 	$(".ping_android").on ('click', function (event) {

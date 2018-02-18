@@ -4,119 +4,29 @@
   <meta charset="utf-8">
   <meta name="description" content="Apps developed by Carlos Rolindez">
   <meta name="keywords" content="Rolindez, MemoryZar, Ping">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
   <title>Carlos Rolindez | My Games</title>
-  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-  <link rel="stylesheet" href="css/style_apps.css">
-  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+  <script type="text/javascript">
+  if (navigator.language=="es") {
+    if (window.innerWidth <= 880) {
+      window.location.href = "./phone/apps_es.html";
+    } else {
+      window.location.href = "apps_es.html"
+    }
+  } else {
+    if (window.innerWidth <= 880) {
+      window.location.href = "./phone/apps_en.html";
+    } else {
+      window.location.href = "apps_en.html"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
-  <div class="solapa" id="juegos">
-    <p>español</p>
-  </div>
 
-  <div class="solapa2" id="english">
-    <p>about me</p>
-  </div>
-
-  <div class="header">
-    <img src="images/mygames.png">
-    <p>I am an amateur programmer and love developping Android Apps for fun</p>
-    <p>Let me present a couple of them</p>
-    <p>Should you be interested you can always visit my <a href="https://github.com/crolindez">website</a> at Github to find some more apps</p>
-  </div>
-  <hr>
-
-  <div class="games">
-    <div class="gap1"></div>
-
-    <div class="ping">
-      <h1 class="ping_android">Ping </h1>
-      <img src="images/Pong.png" alt="" class="ping_android">
-      <h2>Classic Ping game for 1 or 2 players.</h2>
-      <h2>You can play against the device on against a second player on the same device or on another device in your local network.</h2>
-      <h2>There is available a dektop version <a href="apps/Ping/Ping.jar">here</a> (Java required)</h2>
-    </div>
-
-    <div class="gap1"></div>
-
-    <div class="memoryzar">
-      <h1 class="memoryzar_android">MemoryZar </h1>
-      <img src="images/Simon.jpg" alt="" class="memoryzar_android">
-      <h2>Try to remember the correct sequence of colors and sounds.</h2>
-      <h2>Game oriented to children from 5 to 10 years, but enjoyable  for all the whole family.</h2>
-
-    </div>
-
-  </div>
-  <script type="text/javascript" src="js/tools.js"></script>
 </body>
 </html>
-
-
-
-
-
-  <!-- <br>
-  <table >
-  <tr >
-  <th style="text-align:left; width:75%; font-size:35px"> Carlos Rolindez's Apps
-  </th>
-  <th style="text-align:center; width:25%">
-  <a href="../es/apps.html">español
-  </a>
-  </th>
-  </tr>
-  </table>
-  <br>
-  <hr size="1" />
-  <br>
-  <table>
-  <tr>
-  <th style="text-align:left; width:25%; font-size:20px">
-  Ping (for Android)
-  </th>
-  <th style="text-align:left; width:55%; font-size:15px">
-  <br>
-  Classic Ping game for 1 or 2 players.
-  <br>
-  You can play against the device on against a second player on the same device or
-  on another device in your local network.
-  <br> This is the Android version, below you can find also the Desktop version
-  <br>
-  </th>
-  <th style="text-align:center; width:20%">
-  <a href="https://play.google.com/store/apps/details?id=es.carlosrolindez.ping&hl=en">
-  <img src="../images/Pong.jpg" width="100" height="100" alt="" title="" />
-  </a>
-  </th>
-  </tr>
-  <tr>
-  <th style="text-align:left; width:25%; font-size:20px">
-  Ping (for Desktop)
-  </th>
-  <th style="text-align:left; width:55%; font-size:15px">
-  If you want to play this game on your desktop (Java required)
-  </th>
-  <th style="text-align:center; width:20%">
-  <a href="../apps/Ping/Ping.jar">
-  <img src="../images/Pong.jpg" width="100" height="100" alt="" title="" />
-  </a>
-  </th>
-  </tr>
-  <tr>
-  <th style="text-align:left; width:25%; font-size:20px">
-  MemoryZar
-  </th>
-  <th style="text-align:left; width:55%; font-size:15px">
-  Try to remember the correct sequence of colors and sounds.
-  <br>
-  Game oriented to children from 5 to 10 years, but enjoyable  for all the whole family.
-  </th>
-  <th style="text-align:center; width:20%">
-  <a href="https://play.google.com/store/apps/details?id=es.carlosrolindez.memoryzar&hl=en">
-  <img src="../images/Simon.jpg" width="100" height="100" alt="" title="" /> </a>
-  </th>
-  </tr>
-  </table>  -->
