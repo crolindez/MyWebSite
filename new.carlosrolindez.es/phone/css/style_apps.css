@@ -7,7 +7,7 @@ body {
 }
 
 div.supizq {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: 0;
 	width: 80px;
@@ -20,9 +20,6 @@ div.supizq {
 }
 
 div.supizq:hover, div.supizq:active {
-	position: fixed;
-	left: 0px;
-	top: 0;
 	width: 85px;
 	height: 45px;
 }
@@ -33,12 +30,11 @@ div.supizq img{
 }
 
 div.supizq:hover img, div.supizq:active img {
-	margin: 8px 5px 0 0 ;
 	width: 75px;
 }
 
 div.supder  {
-	position: fixed;
+	position: absolute;
 	left: 240px;
 	top: 0;
 	width: 80px;

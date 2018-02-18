@@ -142,39 +142,45 @@ div.linkbar hr, div.linkbar-fixed hr {
 
 div.solapa {
 	position: absolute;
-	margin-top: 20px;
-	margin-left: calc(-140px - 17px + 100vw);
+	margin-top: 0;
+	margin-left: 0;
 	width: 140px;
 	height: 45px;
 	background-color: lawngreen;
-	border-radius: 20px 0 0 20px;
+	border-radius: 0 0 20px 0;
 	color: gray;
 	font-size: 0.4cm;
 	font-weight: 800;
 	line-height: 1.5;
 	z-index: 1010;
-	-webkit-transition: width 0.5s, margin-left 0.5s; /* Safari */
-	transition: width 0.5s, margin-left 0.5s;
+	-webkit-transition: width 0.5s; /* Safari */
+	transition: width 0.5s;
 }
 
 div.solapa:hover {
-	margin-left: calc(-160px - 17px + 100vw);
 	width: 160px;
 }
 
 div.solapa p {
 	text-align: left;
 	padding-left: 30px;
+	-webkit-transition: padding-left 0.5s; /* Safari */
+	transition: padding-left 0.5s;
 }
+
+div.solapa:hover p {
+	padding-left: 40px;
+}
+
 
 div.misjuegos {
 	position: absolute;
-	margin-top: 240px;
+	margin-top: 0px;
 	margin-left: calc(-140px - 17px + 100vw);
 	width: 140px;
 	height: 45px;
 	background-color: black;
-	border-radius: 20px 0 0 20px;
+	border-radius: 0 0 0 20px;
 	z-index: 1010;
 	-webkit-transition: width 0.5s, margin-left 0.5s; /* Safari */
 	transition: width 0.5s, margin-left 0.5s;
@@ -189,6 +195,13 @@ div.misjuegos img {
 	margin-top: 2px;
 	margin-left:15px;
 	height: 40px;
+	-webkit-transition: margin-left 0.5s; /* Safari */
+	transition: margin-left 0.5s;
+}
+
+div.misjuegos:hover img {
+	margin-left:25px;
+
 }
 
 div.experience {

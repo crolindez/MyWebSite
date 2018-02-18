@@ -83,14 +83,14 @@ div.header-container h2, div.header-container h3, div.header-container h4 {
 	margin: 0 20px;
 }
 
-div.header-container a {
-	margin : 0 50px 0 20px;
-	display: inline-block;
-	float: right;
+div.header-container a img{
+	width: 60px;
+	margin-left: 130px;
 }
 
 div.header-container h3 {
-	text-align: right;
+	font-size:8px;
+	font-family: Comfortaa;
 }
 
 div.header-container h4 {
