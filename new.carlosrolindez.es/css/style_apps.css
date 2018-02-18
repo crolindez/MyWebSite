@@ -6,14 +6,47 @@ body{
 	background-color: black;
 }
 
-div.solapa, div.solapa2 {
+div.solapa {
 	position: absolute;
-	top : 20px;
+	top : 0;
+	left: 0;
+	width: 140px;
+	height: 45px;
+	background-color: lawngreen;
+	border-radius: 0 0 20px 0;
+	color: gray;
+	font-size: 0.4cm;
+	font-weight: 800;
+	line-height: 1.5;
+	z-index: 1010;
+	-webkit-transition: width 0.5s; /* Safari */
+	transition: width 0.5s;
+}
+
+div.solapa:hover {
+	width: 160px;
+}
+
+div.solapa p {
+	text-align: left;
+	padding-left: 30px;
+	-webkit-transition: padding-left 0.5s; /* Safari */
+	transition: padding-left 0.5s;
+}
+
+div.solapa:hover p {
+	padding-left: 40px;
+}
+
+
+div.solapa2 {
+	position: absolute;
+	top : 0px;
 	left: calc(-140px - 17px + 100vw);
 	width: 140px;
 	height: 45px;
 	background-color: lawngreen;
-	border-radius: 20px 0 0 20px;
+	border-radius: 0 0 0 20px;
 	color: gray;
 	font-size: 0.4cm;
 	font-weight: 800;
@@ -23,20 +56,20 @@ div.solapa, div.solapa2 {
 	transition: width 0.5s, left 0.5s;
 }
 
-div.solapa2 {
-	top:240px;
-}
-
-div.solapa:hover, div.solapa2:hover {
+div.solapa2:hover {
 	left: calc(-160px - 17px + 100vw);
 	width: 160px;
 }
 
-div.solapa p, div.solapa2 p {
-	text-align: left;
+div.solapa2 p {
 	padding-left: 30px;
+	-webkit-transition: padding-left 0.5s; /* Safari */
+	transition: padding-left 0.5s;
 }
 
+div.solapa2:hover p {
+	padding-left: 40px;
+}
 
 
 div.header {

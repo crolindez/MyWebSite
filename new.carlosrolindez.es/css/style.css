@@ -175,19 +175,19 @@ div.solapa:hover p {
 
 div.misjuegos {
 	position: absolute;
-	margin-top: 0px;
-	margin-left: calc(-140px - 17px + 100vw);
+	top: 0px;
+	left: calc(-140px - 17px + 100vw);
 	width: 140px;
 	height: 45px;
 	background-color: black;
 	border-radius: 0 0 0 20px;
 	z-index: 1010;
-	-webkit-transition: width 0.5s, margin-left 0.5s; /* Safari */
-	transition: width 0.5s, margin-left 0.5s;
+	-webkit-transition: width 0.5s, left 0.5s; /* Safari */
+	transition: width 0.5s, left 0.5s;
 }
 
 div.misjuegos:hover {
-	margin-left: calc(-160px - 17px + 100vw);
+	left: calc(-160px - 17px + 100vw);
 	width: 160px;
 }
 
