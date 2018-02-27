@@ -62,7 +62,7 @@ $(function () {
 	});
 
 	$("#games").on ('click', function (event) {
-		window.location.href = "apps.html"
+		window.location.href = "apps_en.html"
 	});
 
 	$(".ping_android").on ('click', function (event) {
