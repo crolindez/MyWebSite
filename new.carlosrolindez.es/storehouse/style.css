@@ -1,0 +1,220 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-image: url(../images/metal.png);
+	background-size: cover;
+	background-repeat: repeat-y;
+}
+
+h1 {
+	margin: 1vh;
+	font-size:30px;
+	color: #28535d;
+}
+
+input[type=submit].logout {
+	display: block;
+	position: fixed;
+	bottom:  3vh;
+	background-color: #5c7b82;
+	border:2px solid #777;
+	border-radius:5px;
+	height: 6vh;
+	width: 96vw;
+	margin: 0 2vw;
+	font-size:16px;
+	font-family:raleway;
+	color: white;
+	cursor:pointer;
+}
+
+input[type=submit].delete {
+	display: block;
+	position: fixed;
+	bottom:  10vh;
+	background-color: #5c7b82;
+	border:2px solid #777;
+	border-radius:5px;
+	height: 6vh;
+	width: 96vw;
+	margin: 0 2vw;
+	font-size:16px;
+	font-family:raleway;
+	color: white;
+	cursor:pointer;
+}
+
+button {
+	display: block;
+	position: fixed;
+	bottom:  10vh;
+	background-color: red;
+	border:2px solid #777;
+	border-radius:5px;
+	height: 6vh;
+	width: 96vw;
+	margin: 0 2vw;
+	font-size:16px;
+	font-family:raleway;
+	color: white;
+	cursor:pointer;
+}
+input[type=submit].logout:active {
+	font-size: 17px;
+}
+
+table.files {
+	display: block;
+	position: fixed;
+	width: 96vw;
+	top: 9vh;
+	left: 2vw;
+	border:2px solid #777;
+	border-radius: 10px 10px 0 0;
+	background-color: #777;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+}
+
+
+table.files thead   {
+	display: block;
+	border-radius: 10px 10px 0 0;
+}
+
+table.files thead tr {
+	display: block;
+	border-radius: 10px 10px 0 0;
+}
+
+table.files thead th {
+	padding: 8px;
+	background-color: #4CAF50;
+	color: white;
+	text-align: left;
+}
+
+table.files thead th.firstcol {
+	width: 5vw;
+	border-radius: 10px 0 0 0;
+}
+
+table.files thead th.secondcol {
+	width: 55vw;
+}
+
+table.files thead th.thirdcol {
+	width: 18vw;
+}
+table.files thead th.fourthcol {
+	width: 18vw;
+	border-radius: 0 10px 0 0;
+}
+
+
+
+table.files  tbody {
+	display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+	height: 64vh;
+}
+
+
+table.files tbody td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	height: 15px;
+}
+
+
+
+table.files tbody td.firstcol {
+	width: 5vw;
+	padding: 2px 8px;
+}
+
+td.secondcol, td.secondcol {
+	width: 55vw;
+}
+
+td.thirdcol, td.thirdcol {
+	width: 18vw;
+}
+td.fourthcol, td.fourthcol {
+	width: 18vw;
+}
+
+table.files tbody tr:nth-child(even){
+	background-color: #939393;
+}
+
+table.files tbody tr:hover {
+	background-color: #ddd;
+}
+
+table.files tbody tr.activated:nth-child(n){
+	background-color: #fff;
+}
+
+
+
+table.files tbody tr td a {
+		color: inherit;
+		cursor: pointer;
+		text-decoration: none;
+}
+
+table.files tbody tr td a:hover {
+		color: blue;
+		text-decoration:underline;
+}
+
+
+
+
+
+#main {
+	width:384px;
+	margin:50px auto;
+	font-family:raleway;
+}
+
+h1 {
+	text-align: center;
+}
+
+#login {
+	width:300px;
+	border-radius:10px;
+	font-family:raleway;
+	border:2px solid #ccc;
+	padding: 25px 40px 25px;
+	margin-top: 35px;
+	background-color: white;
+}
+
+input[type=text],input[type=password] {
+	width:288px;
+	padding:10px;
+	margin-top:8px;
+	margin-bottom: 8px;
+	border:1px solid #ccc;
+	padding: 10px 5px;
+	font-size:16px;
+	font-family:raleway;
+}
+
+input[type=submit].login {
+	width:100%;
+	background-color:#FFBC00;
+	color:#fff;
+	border:2px solid #FFCB00;
+	padding:10px;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:5px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}

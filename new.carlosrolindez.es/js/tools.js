@@ -62,7 +62,7 @@ $(function () {
 	});
 
 	$("#games").on ('click', function (event) {
-		window.location.href = "apps_en.html"
+		window.location.href = "apps.html"
 	});
 
 	$(".ping_android").on ('click', function (event) {
@@ -80,8 +80,12 @@ $(function () {
 	$(".memoryzar_androide").on ('click', function (event) {
 		window.location.href = "https://play.google.com/store/apps/details?id=es.carlosrolindez.memoryzar&hl=es"
 	});
-});
 
+
+
+
+
+});
 
 
 //This is a pen based off of Codewoofy's eyes follow mouse. It is just cleaned up, face removed, and then made to be a little more cartoony. https://codepen.io/Codewoofy/pen/VeBJEP
