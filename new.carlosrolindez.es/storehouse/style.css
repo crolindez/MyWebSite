@@ -11,55 +11,41 @@ h1 {
 	margin: 1vh;
 	font-size:30px;
 	color: #28535d;
+	text-align: center;
+}
+
+h2 {
+	margin: 1vh;
+	font-size:20px;
+	color: #28535d;
+	text-align: center;
+}
+
+input[type=submit] {
+	display: block;
+	position: fixed;
+	background-color: #5c7b82;
+	border:2px solid #777;
+	border-radius:5px;
+	margin: 0 2vw;
+	font-size:16px;
+	font-family:raleway;
+	color: white;
+	cursor:pointer;
 }
 
 input[type=submit].logout {
-	display: block;
-	position: fixed;
-	bottom:  3vh;
-	background-color: #5c7b82;
-	border:2px solid #777;
-	border-radius:5px;
-	height: 6vh;
+	bottom:  5px;
+	height: 30px;
 	width: 96vw;
-	margin: 0 2vw;
-	font-size:16px;
-	font-family:raleway;
-	color: white;
-	cursor:pointer;
 }
 
 input[type=submit].delete {
-	display: block;
-	position: fixed;
-	bottom:  10vh;
-	background-color: #5c7b82;
-	border:2px solid #777;
-	border-radius:5px;
-	height: 6vh;
+	bottom: 40px;
+	height: 30px;
 	width: 96vw;
-	margin: 0 2vw;
-	font-size:16px;
-	font-family:raleway;
-	color: white;
-	cursor:pointer;
 }
 
-button {
-	display: block;
-	position: fixed;
-	bottom:  10vh;
-	background-color: red;
-	border:2px solid #777;
-	border-radius:5px;
-	height: 6vh;
-	width: 96vw;
-	margin: 0 2vw;
-	font-size:16px;
-	font-family:raleway;
-	color: white;
-	cursor:pointer;
-}
 input[type=submit].logout:active {
 	font-size: 17px;
 }
@@ -68,8 +54,8 @@ table.files {
 	display: block;
 	position: fixed;
 	width: 96vw;
-	top: 9vh;
-	left: 2vw;
+	margin-top: 3px;
+	margin-left: 2vw;
 	border:2px solid #777;
 	border-radius: 10px 10px 0 0;
 	background-color: #777;
@@ -118,7 +104,7 @@ table.files  tbody {
 	display: block;
   overflow-y: auto;
   overflow-x: hidden;
-	height: 64vh;
+	height: calc(-210px + 100vh);
 }
 
 
@@ -181,9 +167,6 @@ table.files tbody tr td a:hover {
 	font-family:raleway;
 }
 
-h1 {
-	text-align: center;
-}
 
 #login {
 	width:300px;
@@ -207,14 +190,15 @@ input[type=text],input[type=password] {
 }
 
 input[type=submit].login {
-	width:100%;
+	display: inline-block;
+	position: static;
+	width: 300px;
 	background-color:#FFBC00;
 	color:#fff;
 	border:2px solid #FFCB00;
-	padding:10px;
+	padding: 9px 4px ;
 	font-size:20px;
 	cursor:pointer;
 	border-radius:5px;
-	margin-top: 20px;
-	margin-bottom: 15px;
+	margin: 20px 0px 0px 0px;
 }

@@ -1,6 +1,8 @@
 <?php
 include('login.php'); // Includes Login Script
-
+if(!isset($_COOKIE['root_folder'])) {
+    setcookie('root_folder','./data/');
+}
 if(isset($_SESSION['login_user'])){
   header("location: manager.php");
 }
@@ -29,7 +31,6 @@ if(isset($_SESSION['login_user'])){
         <label>Password :</label>
         <input id="password" name="password" placeholder="**********" type="password">
         <input class="login" name="submit" type="submit" value=" Login ">
-        <span><?php echo $error; ?></span>
       </form>
     </div>
   </div>

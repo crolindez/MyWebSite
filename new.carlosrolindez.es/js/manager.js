@@ -14,16 +14,15 @@ $(function () {
 		$("input#listoffiles").attr("value",serialized);
   });
 
-	// $("tr.folder").click(function() {
-	// 	$(this).toggleClass("activated");
-	// 	$("input#listoffiles").attr("value",$(this).data("file"));
-	// });
+	setheadfolder(getCookie("root_folder"));
+
 })
 
 var currentFolder="";
 
 function showfolder(folder) {
   $("tr.file").removeClass("activated");
+  $("tr.folder").removeClass("activated");
 
   $("tr").css("display","none");
   $("tr").filter(function(){
@@ -42,6 +41,7 @@ function showfolder(folder) {
     }).css("display","table-row");
   }
 	setCookie("root_folder",currentFolder);
+	setheadfolder(currentFolder);
 }
 
 function upfolder() {
@@ -49,6 +49,7 @@ function upfolder() {
   if (currentFolder=="./data/") {return;}
 
   $("tr.file").removeClass("activated");
+	 $("tr.folder").removeClass("activated");
 
   var parts = currentFolder.split('/');
   parts.pop();
@@ -72,9 +73,31 @@ function upfolder() {
   }
 
 	setCookie("root_folder",currentFolder);
+	setheadfolder(currentFolder);
 }
 
 function setCookie(cname, cvalue) {
 
     document.cookie = cname + "=" + cvalue + ";" ;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+//    var decodedCookie = decodeURIComponent(document.cookie);
+    var decodedCookie = document.cookie;
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function setheadfolder(path) {
+		$("#headfolder").text(path.replace('./data/','Storehouse/'));
 }

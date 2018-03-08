@@ -1,6 +1,10 @@
 <?php
 
 session_start();
+if(!isset($_COOKIE['root_folder'])) {
+    setcookie('root_folder','./data/');
+}
+
 if(!isset($_SESSION['login_user'])){
   header("location: index.php");
 }
@@ -15,9 +19,7 @@ if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 
 }
 $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
 
-if(!isset($_COOKIE['root_folder'])) {
-    setcookie('root_folder','./data/');
-}
+
 
 if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['logout'])) {
   session_unset();
@@ -27,7 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['logout'])) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['delfile'])) {
-
   $filesToDelete = explode(":", $_POST['fname']);
   foreach($filesToDelete as $file) {
     if (substr($file,0,6)=="./data") {
@@ -66,7 +67,7 @@ function developeFolder($folder) { // folder should end with '/'
 
   foreach (glob($folder."*") as $filename) {
 //      $name=utf8_encode($filename);
-      $name=$filename;
+    $name=$filename;
     $size= filesize($filename);
     $date= date("d/m/Y H:i:s",filemtime($filename));
     $isfolder= is_dir($filename);
@@ -106,7 +107,7 @@ function developeFolder($folder) { // folder should end with '/'
 
 <body>
 
-  <h1> Carlos Rolindez's Storehouse </h1>
+  <h2 id="headfolder"> </script></h2>
 
   <table class="files">
     <thead>
@@ -130,10 +131,9 @@ function developeFolder($folder) { // folder should end with '/'
   </table>
 
 
-  <!-- <button>Delete selected</button> -->
 
   <form action="manager.php" method="post">
-    <input id="listoffiles" type="hidden" value="" name="fname"><br>
+    <input id="listoffiles" type="hidden" value="" name="fname">
     <input type="submit" class="delete" name="delfile" value="delete selected" />
   </form>
 
