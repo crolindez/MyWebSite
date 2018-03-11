@@ -27,9 +27,9 @@ if(isset($_SESSION['login_user'])){
     <div id="login">
       <form action="" method="post">
         <label>UserName :</label>
-        <input id="name" name="username" placeholder="username" type="text">
+        <input class="loginName" name="username" placeholder="username" type="text">
         <label>Password :</label>
-        <input id="password" name="password" placeholder="**********" type="password">
+        <input class="loginPassword" name="password" placeholder="**********" type="password">
         <input class="login" name="submit" type="submit" value=" Login ">
       </form>
     </div>

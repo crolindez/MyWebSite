@@ -21,33 +21,82 @@ h2 {
 	text-align: center;
 }
 
-input[type=submit] {
-	display: block;
+input[type=submit],  input[type=file] + label{
+	white-space: nowrap;
+	overflow: hidden;
+	box-sizing: border-box;
+	display: inline-block;
 	position: fixed;
 	background-color: #5c7b82;
-	border:2px solid #777;
+	border:2px solid #b4ff5c;
 	border-radius:5px;
-	margin: 0 2vw;
 	font-size:16px;
 	font-family:raleway;
+	text-align: center;
 	color: white;
 	cursor:pointer;
+	height: 30px;
+	margin: 0px;
+	padding: 1px;
+}
+
+input[type=file] {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+
+}
+
+input[type=file] + label{
+	width: 24vw;
+	bottom: 40px;
+	left: 1.5vw;
+	border-radius: 5px 0 0 5px;
+}
+
+input[type=submit].upload {
+	bottom: 40px;
+	width: 24vw;
+	left: 25.5vw;
+	border-radius: 0 5px 5px 0;
+}
+
+
+input[type=submit].createFolder {
+	bottom: 40px;
+	width: 48vw;
+	left: 50.5vw;
+
+}
+
+
+
+input[type=submit].delete {
+	bottom: 5px;
+	width: 48vw;
+	left: 1.5vw;
 }
 
 input[type=submit].logout {
 	bottom:  5px;
-	height: 30px;
-	width: 96vw;
+	width: 48vw;
+	left: 50.5vw;
 }
 
-input[type=submit].delete {
-	bottom: 40px;
-	height: 30px;
-	width: 96vw;
-}
 
-input[type=submit].logout:active {
+
+input[type=submit].logout:active,
+input[type=submit].delete:active {
 	font-size: 17px;
+}
+
+label[for=fileToUpload] {
+	margin: 2px 10px;
+	color: white;
+	fill: currentColor;
 }
 
 table.files {
@@ -57,7 +106,7 @@ table.files {
 	margin-top: 3px;
 	margin-left: 2vw;
 	border:2px solid #777;
-	border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 10px 10px;
 	background-color: #777;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
@@ -105,11 +154,13 @@ table.files  tbody {
   overflow-y: auto;
   overflow-x: hidden;
 	height: calc(-210px + 100vh);
+	border-radius: 0 0 10px 10px;
+	padding-bottom: 10px;
 }
 
 
 table.files tbody td {
-	border: 1px solid #ddd;
+	border: 1px solid #9E9E9E;
 	padding: 8px;
 	height: 15px;
 }
@@ -135,6 +186,7 @@ td.fourthcol, td.fourthcol {
 table.files tbody tr:nth-child(even){
 	background-color: #939393;
 }
+
 
 table.files tbody tr:hover {
 	background-color: #ddd;
@@ -178,7 +230,7 @@ table.files tbody tr td a:hover {
 	background-color: white;
 }
 
-input[type=text],input[type=password] {
+input[type=text].loginName ,input[type=password].loginPassword {
 	width:288px;
 	padding:10px;
 	margin-top:8px;
@@ -197,8 +249,10 @@ input[type=submit].login {
 	color:#fff;
 	border:2px solid #FFCB00;
 	padding: 9px 4px ;
+	font-family:raleway;
 	font-size:20px;
 	cursor:pointer;
 	border-radius:5px;
 	margin: 20px 0px 0px 0px;
+	height: auto;
 }

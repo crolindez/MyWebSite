@@ -13,22 +13,24 @@ if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 
   // last request was more than 10 minutes ago
   session_unset();
   session_destroy();
-  header("Location: index.php");
   setcookie('root_folder','./data/',-1);
-
+  header("Location: index.php");
 }
 $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
 
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['logout'])) {
+  echo "<script>alert('control2');</script>";
   session_unset();
   session_destroy();
-  header("Location: index.php");
   setcookie('root_folder','./data/',-1);
+  header("Location: index.php");
 }
 
-if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['delfile'])) {
+if ($_SERVER['REQUEST_METHOD'] == "POST" /*and isset($_POST['delfile'])*/) {
+  echo "<script>alert('hola');</script>";
+  echo "<script>alert('".$_POST['delfile']."');</script>";
   $filesToDelete = explode(":", $_POST['fname']);
   foreach($filesToDelete as $file) {
     if (substr($file,0,6)=="./data") {
@@ -43,6 +45,30 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['delfile'])) {
 
 }
 
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['upload'])) {
+  $total = count($_FILES['fileToUpload']['name']);
+
+  // Loop through each file
+  for($i=0; $i<$total; $i++) {
+    //Get the temp file path
+    $tmpFilePath = $_FILES['fileToUpload']['tmp_name'][$i];
+
+    //Make sure we have a filepath
+    if ($tmpFilePath != ""){
+      //Setup our new file path
+      $newFilePath = $_COOKIE['root_folder'] . $_FILES['fileToUpload']['name'][$i];
+
+      //Upload the file into the temp dir
+      echo "<script>alert('".$tmpFilePath." -> ".$newFilePath."');</script>";
+      if(move_uploaded_file($tmpFilePath, $newFilePath)) {
+
+        //Handle other code here
+
+      }
+    }
+  }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['delfile'])) {
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" >
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-  <script type="text/javascript" src="../js/manager.js"></script>
+  <script type="text/javascript" src="manager.js"></script>
   <title>Carlos Rolindez's Storehouse </title>
 
 
@@ -132,14 +158,29 @@ function developeFolder($folder) { // folder should end with '/'
 
 
 
-  <form action="manager.php" method="post">
-    <input id="listoffiles" type="hidden" value="" name="fname">
-    <input type="submit" class="delete" name="delfile" value="delete selected" />
+  <form action="manager.php" method="post" enctype="multipart/form-data">
+    <input type="file" id="fileToUpload" class="inputfile" name="fileToUpload[]" data-multiple-caption="{count} files selected" multiple/>
+    <label for="fileToUpload"><svg width="20" height="20 " viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/> <span> Choose a file&hellip;</span></label>
+    <input type="submit" class="upload" name="upload" value="upload"/>
   </form>
 
   <form action="manager.php" method="post">
-    <input type="submit" class="logout" name="logout" value="logout" />
+    <input type="text" class="createFolder" name="newfolder" />
+    <input type="submit" class="createFolder" name="createFolder" value="new folder" />
   </form>
+
+  <form action="manager.php" method="post">
+    <input type="hidden" class="delete" name="fname" value=""/>
+    <input type="submit" class="delete" name="delfile" value="delete selected" />
+  </form>
+
+
+
+  <form action="manager.php" method="post">
+    <input type="submit" class="logout" name="logout" value="logout" ></input>
+  </form>
+
+
 
 
 </body>
