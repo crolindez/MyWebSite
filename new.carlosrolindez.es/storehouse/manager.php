@@ -165,23 +165,16 @@ function developeFolder($folder) { // folder should end with '/'
   <form action="manager.php" method="post" enctype="multipart/form-data">
     <input type="file" id="fileToUpload" class="inputfile" name="fileToUpload[]" data-multiple-caption="{count} files selected" multiple/>
     <label for="fileToUpload"><svg width="20" height="20 " viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
-      <span> Choose a file&hellip;</span></label>
+      <span> choose a file&hellip;</span></label>
     <input type="submit" class="upload" name="upload" value="upload"/>
   </form>
 
-  <!-- <span class="input input--folder">
-    <input class="input__field input__field--kohana" type="text" id="input-29" />
-    <label class="input__label input__label--kohana" for="input-29">
-      <i class="fa fa-fw fa-clock-o icon icon--kohana"></i>
-      <span class="input__label-content input__label-content--kohana">Time</span>
-    </label>
-  </span> -->
 
   <form action="manager.php" method="post">
     <input type="text" class="createFolder" id="inputnewfolder" name="newfolder" />
     <label class="createFolder" for="inputnewfolder">
       <svg  width="20" height="20"  viewBox="0 0 36 36"><path d="m35.32 18.74a1.71 1.71 0 0 0-1.45-.74h-22.7a2.59 2.59 0 0 0-2.25 1.52 1 1 0 0 0 0 .14l-2.92 10.34v-18h6.49l2.61 3.59a1 1 0 0 0 .81.41h16.09a2 2 0 0 0-2-2h-13.58l-2.31-3.18a2 2 0 0 0-1.62-.82h-6.49a2 2 0 0 0-2 2v22.69a1.37 1.37 0 0 0 1.41 1.31h24.93a1 1 0 0 0 1-.72l4.19-15.1a1.64 1.64 0 0 0-.21-1.44z"/>
-        <span> Type new folder&hellip;</span></label>
+        <span> type new folder&hellip;</span></label>
     <input type="submit" class="createFolder" name="createFolder" value="create folder" />
   </form>
 
